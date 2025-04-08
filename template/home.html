@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGA</title>
+    <!-- <link rel="stylesheet" href="{% static 'myapp/style.css' %}"> -->
+    <link rel="stylesheet" href="../styling/home.css">
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <nav class="nav-buttons">
+                <button> Adicionar </button>
+                <button> Documentos </button>
+                <button> Usuarios </button>
+                <button> Sair </button>
+            </nav>
+        </div>
+    </header>
+    <div class="main-area">
+        <div class="searchBox">
+            <input id="searchInput" type="search"> 
+        </div>
+        <div id="recent-changes-box">
+            <div class="scrolling">
+              <div class="item">1</div>
+              <div class="item">2</div>
+              <div class="item">3</div>
+            </div>
+          </div>
+    </div>
+    <section id="searchResults" class="searchResults">
+        <ul class="result-list" id="result-list">
+
+        </ul>
+    </section>
+</body>
+<script src="{% static 'myapp/script.js' %}"></script>
+</html>
